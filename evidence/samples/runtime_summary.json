@@ -1,0 +1,36 @@
+{
+  "captured_at_utc": "2026-09-09T20:41:06.676813Z",
+  "checkpoint_files_examined": 1165,
+  "state_checkpoint_count": 1165,
+  "other_checkpoint_count": 0,
+  "envelope_hash_mismatches": 0,
+  "checkpoint_error_field_count": 83,
+  "counter_decreases": 0,
+  "first": {
+    "timestamp_utc": "2026-09-07T03:54:46.204493Z",
+    "completed_batches": 0,
+    "memory_event_count": 1533,
+    "state": "WAITING_FOR_OWNER",
+    "session_batches": null,
+    "autonomous_mode": false,
+    "checkpoint_error_present": false,
+    "envelope_hash_match": true,
+    "producer_integrity_status": "PASS",
+    "producer_source_hash_verification": "PASS",
+    "producer_sqlite_status": "ok"
+  },
+  "last": {
+    "timestamp_utc": "2026-09-09T20:40:10.463510Z",
+    "completed_batches": 1083,
+    "memory_event_count": 3703,
+    "state": "RUNNING",
+    "session_batches": 42,
+    "autonomous_mode": true,
+    "checkpoint_error_present": false,
+    "envelope_hash_match": true,
+    "producer_integrity_status": "PASS",
+    "producer_source_hash_verification": "PASS",
+    "producer_sqlite_status": "ok"
+  },
+  "scope": "Fixed inventory of local checkpoint records; live runtime may advance. Metadata observations, not an independent scientific or end-to-end runtime validation."
+}

@@ -1,0 +1,5 @@
+SYNTHETIC DEMO ONLY
+Source: listing-1
+Issued: 2030-01-04
+Scope: Fictional Maple Reading Room, 2030-02-01.
+Statement L1: The paper-folding event starts at 14:00.

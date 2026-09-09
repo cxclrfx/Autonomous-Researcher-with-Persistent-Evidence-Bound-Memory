@@ -1,0 +1,55 @@
+{
+  "observation": "Four distinct run identifiers appear in the local operation log. Identifiers replaced by chronological aliases. Each has selection and restore operation records.",
+  "limitation": "Operation records are emitted in a finally block, including on failure. Counts measure recorded operations, not successful completions. They do not prove a successful stop/restart/resume or machine power cycle.",
+  "restart_resume_verdict": "NOT_ESTABLISHED",
+  "sessions": [
+    {
+      "session": "session-1",
+      "first_operation_utc": "2026-09-09T17:20:38.964033Z",
+      "last_finished_operation_utc": "2026-09-09T17:23:29.008604Z",
+      "operation_counts": {
+        "CHECKPOINT_SELECTION": 1,
+        "RESTORE": 1,
+        "CHECKPOINT_VERIFY": 1
+      }
+    },
+    {
+      "session": "session-2",
+      "first_operation_utc": "2026-09-09T17:25:38.658393Z",
+      "last_finished_operation_utc": "2026-09-09T17:31:26.008727Z",
+      "operation_counts": {
+        "CHECKPOINT_SELECTION": 1,
+        "RESTORE": 1,
+        "CHECKPOINT_WRITE": 1,
+        "CHECKPOINT_VERIFY": 3,
+        "BATCH": 2,
+        "MODEL_ATOMIC_OPERATION": 1
+      }
+    },
+    {
+      "session": "session-3",
+      "first_operation_utc": "2026-09-09T17:34:20.698369Z",
+      "last_finished_operation_utc": "2026-09-09T17:38:08.468562Z",
+      "operation_counts": {
+        "CHECKPOINT_SELECTION": 1,
+        "RESTORE": 1,
+        "CHECKPOINT_WRITE": 1,
+        "CHECKPOINT_VERIFY": 1
+      }
+    },
+    {
+      "session": "session-4",
+      "first_operation_utc": "2026-09-09T19:12:42.302109Z",
+      "last_finished_operation_utc": "2026-09-09T20:40:10.479537Z",
+      "operation_counts": {
+        "CHECKPOINT_SELECTION": 1,
+        "RESTORE": 1,
+        "CHECKPOINT_VERIFY": 47,
+        "CHECKPOINT_WRITE": 2,
+        "MODEL_ATOMIC_OPERATION": 43,
+        "MEMORY_WRITE": 43,
+        "BATCH": 43
+      }
+    }
+  ]
+}

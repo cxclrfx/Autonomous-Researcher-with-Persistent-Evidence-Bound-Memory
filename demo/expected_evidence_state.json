@@ -1,0 +1,86 @@
+{
+  "kind": "manually_authored_synthetic_expected_state",
+  "private_implementation_executed": false,
+  "scope": "Fictional Maple Reading Room, 2030-02-01",
+  "states": [
+    {
+      "id": "opening-initial",
+      "claim": "The reading room opens at 09:00.",
+      "status": "SUPERSEDED",
+      "source": {
+        "file": "corpus/01_initial_notice.txt",
+        "sha256": "4220a7b1f95ef9ca2c9631f2b47d3f0179ab47a98bb509ab02bb7b80a76b083f",
+        "line": 5,
+        "quote": "Statement N1: The reading room opens at 09:00."
+      },
+      "superseded_by": "opening-corrected"
+    },
+    {
+      "id": "opening-corrected",
+      "claim": "The reading room opens at 10:00.",
+      "status": "CURRENT_WITHIN_FIXTURE",
+      "source": {
+        "file": "corpus/02_corrected_notice.txt",
+        "sha256": "41058f2c2a6a70b4603ef3a21760a6e2fe7f9634ca399579f4ce7fa5da47eb8b",
+        "line": 5,
+        "quote": "Statement N2: This notice explicitly corrects statement N1 in notice-1. The reading room opens at 10:00."
+      },
+      "supersedes": "opening-initial",
+      "reason": "An explicit correction targets the earlier statement in the same scope; recency alone is not the authority rule."
+    },
+    {
+      "id": "event-listing",
+      "claim": "The paper-folding event starts at 14:00.",
+      "status": "CONFLICTING",
+      "source": {
+        "file": "corpus/03_event_listing.txt",
+        "sha256": "0557044f55afe074786fbda8d4129234ce2d82329d8f535464664fe63a9e90f7",
+        "line": 5,
+        "quote": "Statement L1: The paper-folding event starts at 14:00."
+      },
+      "conflicts_with": "event-card"
+    },
+    {
+      "id": "event-card",
+      "claim": "The paper-folding event starts at 15:00.",
+      "status": "CONFLICTING",
+      "source": {
+        "file": "corpus/04_event_card.txt",
+        "sha256": "a4d3b644cf83e02e06750693be7545cf1712708fdb08a069968b2920a15293e6",
+        "line": 5,
+        "quote": "Statement C1: The paper-folding event starts at 15:00."
+      },
+      "conflicts_with": "event-listing"
+    },
+    {
+      "id": "access-question",
+      "question": "Is step-free access available?",
+      "status": "UNRESOLVED",
+      "source": {
+        "file": "corpus/04_event_card.txt",
+        "sha256": "a4d3b644cf83e02e06750693be7545cf1712708fdb08a069968b2920a15293e6",
+        "line": 6,
+        "quote": "Statement C2: Step-free access has not been confirmed; confirmation is still needed."
+      },
+      "reason": "Lack of confirmation is not evidence that access is unavailable."
+    }
+  ],
+  "ingestion_trace": [
+    {
+      "after": "01_initial_notice.txt",
+      "expected": "Opening 09:00 is current within the initial fixture view."
+    },
+    {
+      "after": "02_corrected_notice.txt",
+      "expected": "Keep the earlier opening as superseded; opening 10:00 is current within the corrected fixture view."
+    },
+    {
+      "after": "03_event_listing.txt",
+      "expected": "Keep the event-listing assertion with its source; it is not independently established truth."
+    },
+    {
+      "after": "04_event_card.txt",
+      "expected": "Retain both conflicting event assertions without choosing a winner. Access remains unresolved."
+    }
+  ]
+}

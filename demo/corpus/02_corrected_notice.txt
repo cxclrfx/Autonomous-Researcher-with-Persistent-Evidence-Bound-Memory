@@ -1,0 +1,5 @@
+SYNTHETIC DEMO ONLY
+Source: notice-2
+Issued: 2030-01-03
+Scope: Fictional Maple Reading Room, 2030-02-01.
+Statement N2: This notice explicitly corrects statement N1 in notice-1. The reading room opens at 10:00.

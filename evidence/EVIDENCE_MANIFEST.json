@@ -1,0 +1,62 @@
+{
+  "evidence_version": "1.0.0",
+  "created_at_utc": "2026-09-09T20:41:06.676813Z",
+  "source_category": "Sanitized derivatives of local private runtime records; separately labeled synthetic conceptual fixture",
+  "private_source_corpus_included": false,
+  "derivation_statement": "Public runtime evidence is derived from local runtime records. No raw private state, checkpoints, implementation, or source corpus is included. The synthetic demo was manually authored for this package.",
+  "verification_scope": "Sanitized artifact hashes establish byte integrity only, not semantic correctness, authority, source authentication, or independent closure.",
+  "hash_algorithm": "SHA-256",
+  "hash_scope": "All evidence and demo files except this manifest; no self-hash. README and LICENSE are outside this manifest.",
+  "artifacts": [
+    {
+      "path": "demo/corpus/01_initial_notice.txt",
+      "sha256": "4220a7b1f95ef9ca2c9631f2b47d3f0179ab47a98bb509ab02bb7b80a76b083f",
+      "bytes": 152
+    },
+    {
+      "path": "demo/corpus/02_corrected_notice.txt",
+      "sha256": "41058f2c2a6a70b4603ef3a21760a6e2fe7f9634ca399579f4ce7fa5da47eb8b",
+      "bytes": 210
+    },
+    {
+      "path": "demo/corpus/03_event_listing.txt",
+      "sha256": "0557044f55afe074786fbda8d4129234ce2d82329d8f535464664fe63a9e90f7",
+      "bytes": 161
+    },
+    {
+      "path": "demo/corpus/04_event_card.txt",
+      "sha256": "a4d3b644cf83e02e06750693be7545cf1712708fdb08a069968b2920a15293e6",
+      "bytes": 243
+    },
+    {
+      "path": "demo/expected_evidence_state.json",
+      "sha256": "77b1aa1c7d886bb8d1681deae8390c01a1837ea8568854f9a1a70b9b812e1e00",
+      "bytes": 3197
+    },
+    {
+      "path": "demo/README.md",
+      "sha256": "70f1504fd39c488c0255b2e7cfb86bc3b31bba36a2e952b6d724b38635ccfd75",
+      "bytes": 2786
+    },
+    {
+      "path": "evidence/PROTOTYPE_EVIDENCE.md",
+      "sha256": "735d5789dae4f6d145b1988e2461d47b3f1166f34730c434be69cea2fa3d5d8d",
+      "bytes": 5048
+    },
+    {
+      "path": "evidence/samples/checkpoint_sequence.txt",
+      "sha256": "e272c7139b9174272f60e52c0da906bff7b60bc3d86050ffb94e52173537e1ed",
+      "bytes": 669
+    },
+    {
+      "path": "evidence/samples/restart_resume_record.json",
+      "sha256": "e08a924e6c4aa82d1cf86fe33dce0abeb0f20dd9c0495a5bfb73075f01daea9a",
+      "bytes": 1900
+    },
+    {
+      "path": "evidence/samples/runtime_summary.json",
+      "sha256": "92a62da72d388e4d60985df980f4a0f78431ed4fec6fda2a1e65f2059932a13c",
+      "bytes": 1255
+    }
+  ]
+}

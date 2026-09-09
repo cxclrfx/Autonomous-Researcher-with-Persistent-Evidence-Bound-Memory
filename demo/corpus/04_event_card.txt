@@ -1,0 +1,6 @@
+SYNTHETIC DEMO ONLY
+Source: card-1
+Issued: 2030-01-04
+Scope: Fictional Maple Reading Room, 2030-02-01.
+Statement C1: The paper-folding event starts at 15:00.
+Statement C2: Step-free access has not been confirmed; confirmation is still needed.
